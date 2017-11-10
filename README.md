@@ -33,9 +33,9 @@ class User
 {
     use IsAutoSortable;
 
-    protectd $sortByKey = 'orderBy';
+    protected $sortByKey = 'orderBy';
 
-    protectd $sortKey = 'order';
+    protected $sortKey = 'order';
 }
 
 ```
