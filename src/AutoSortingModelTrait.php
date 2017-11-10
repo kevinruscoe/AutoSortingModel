@@ -13,9 +13,9 @@ trait AutoSortingModelTrait
      *
      * @return void
      */
-    protected static function bootAutoSortingModel()
+    protected static function bootAutoSortingModelTrait()
     {
-        static::addGlobalScope('auto-sorting', function (Builder $builder) {
+        static::addGlobalScope('auto-sorting-model', function (Builder $builder) {
 
             $sortByKey = $builder->getModel()->sortByKey;
             $sortKey = $builder->getModel()->sortKey;
