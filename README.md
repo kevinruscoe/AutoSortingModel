@@ -13,8 +13,9 @@ namespace App;
 
 use KevinRuscoe\AutoSortingModelTrait\AutoSortingModelTrait as IsAutoSortable;
 
-class User {
-	use IsAutoSortable;
+class User
+{
+    use IsAutoSortable;
 }
 
 ```
@@ -28,12 +29,13 @@ namespace App;
 
 use KevinRuscoe\AutoSortingModelTrait\AutoSortingModelTrait as IsAutoSortable;
 
-class User {
-	use IsAutoSortable;
+class User
+{
+    use IsAutoSortable;
 
-	protectd $sortByKey = 'orderBy';
+    protectd $sortByKey = 'orderBy';
 
-	protectd $sortKey = 'order';
+    protectd $sortKey = 'order';
 }
 
 ```
