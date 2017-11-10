@@ -1,5 +1,5 @@
 {
-	"name": "kevinruscoe/autosortingmodel",
+	"name": "kevinruscoe/autosortingmodeltrait",
 	"description": "A very simple trait to auto-sort models based on querystring values.",
 	"keywords": [
 		"model",
@@ -21,7 +21,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"KevinRuscoe\\AutoSortingModel\\": "src"
+			"KevinRuscoe\\AutoSortingModelTrait\\": "src"
 		}
 	},
 	"license": "MIT"
