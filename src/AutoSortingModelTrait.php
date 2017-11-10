@@ -1,12 +1,12 @@
 <?php
 
-namespace KevinRuscoe\AutoSortingModel;
+namespace KevinRuscoe\AutoSortingModelTrait;
 
 use Illuminate\Database\Eloquent\Builder;
 
 use Schema;
 
-trait AutoSortingModel
+trait AutoSortingModelTrait
 {
     /**
      * Boots the model and applies the 'auto-sorting' scope.
