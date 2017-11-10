@@ -1,6 +1,8 @@
+# About
+
 This is a very simple trait that add auto-sorting to Eloquent models.
 
-### usage
+## Usage
 
 Import the trait like:
 
