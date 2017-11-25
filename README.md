@@ -11,31 +11,31 @@ Import the trait like:
 
 namespace App;
 
-use KevinRuscoe\AutoSortingModelTrait\AutoSortingModelTrait as IsAutoSortable;
+use KevinRuscoe\AutoSortingModel\Traits\AutoSortingModelTrait as AutoSortable;
 
 class User
 {
-    use IsAutoSortable;
+    use AutoSortable;
 }
 
 ```
 
-By default the trait will look for the `sortBy` and `sort` querystring values to do the sorting. You can overwrite the `sortByKey` and `sortKey` properties of your model to change these.
+By default the trait will look for the `sortBy` and `sort` querystring values to do the sorting. You can overwrite the `sortByKey` and `sortOrderKey` properties of your model to change these.
 
 ```
 <?php
 
 namespace App;
 
-use KevinRuscoe\AutoSortingModelTrait\AutoSortingModelTrait as IsAutoSortable;
+use KevinRuscoe\AutoSortingModel\Traits\AutoSortingModelTrait as AutoSortable;
 
 class User
 {
-    use IsAutoSortable;
+    use AutoSortable;
 
     protected $sortByKey = 'orderBy';
 
-    protected $sortKey = 'order';
+    protected $sortOrderKey = 'order';
 }
 
 ```

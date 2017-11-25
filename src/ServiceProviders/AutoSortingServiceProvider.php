@@ -14,6 +14,8 @@ class AutoSortingModelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+		$this->publishes([
+			__DIR__.'/../config/autosortingmodel.php' => config_path('autosortingmodel.php'),
+		]);
     }
 }
