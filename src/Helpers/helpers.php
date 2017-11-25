@@ -1,6 +1,6 @@
 <?php
 
-function getSortLink($key)
+function sortLink($key)
 {
 	return request()->fullUrlWithQuery([
 		'sortBy' => $key,

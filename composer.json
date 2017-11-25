@@ -27,12 +27,5 @@
 			"src/Helpers/helpers.php"
         ]
 	},
-	"extra": {
-	    "laravel": {
-	        "providers": [
-	            "KevinRuscoe\\AutoSortingModel\\ServiceProviders\\AutoSortingModelServiceProvider"
-	        ]
-	    }
-	},
 	"license": "MIT"
 }

@@ -14,8 +14,6 @@ class AutoSortingModelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::directive('sortLink', function ($key) {
-            return getSortLink($key);
-        });
+        
     }
 }
