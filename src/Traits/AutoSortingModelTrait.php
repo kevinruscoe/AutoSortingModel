@@ -16,18 +16,18 @@ trait AutoSortingModelTrait
     protected static function bootAutoSortingModelTrait()
     {
         static::addGlobalScope('auto-sorting-model', function (Builder $builder) {
-            $sortByKey = config('autosortingmodel.sortByKey', 'sortBy');
-            $sortOrderKey = config('autosortingmodel.sortOrderKey', 'sort');
+            $sortColumnKey = config('autosortingmodel.sortColumnKey', 'sortColumn');
+            $sortOrderDirectionKey = config('autosortingmodel.sortOrderDirectionKey', 'sortDirection');
 
-            $sortBy = request($sortByKey ?? 'sortBy', 'id');
-            $sort = request($sortOrderKey ?? 'sort', 'asc');
+            $sortColumn = request($sortColumnKey, 'id');
+            $sortDirection = request($sortOrderDirectionKey, 'asc');
 
             $columnNames = Schema::getColumnListing(
                 $builder->getModel()->getTable()
             );
 
-            if (in_array($sortBy, $columnNames)) {
-                $builder->orderBy($sortBy, $sort);
+            if (in_array($sortColumn, $columnNames)) {
+                $builder->orderBy($sortColumn, $sortDirection);
             }
         });
     }
