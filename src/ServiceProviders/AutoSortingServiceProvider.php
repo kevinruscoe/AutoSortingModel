@@ -1,6 +1,6 @@
 <?php
 
-namespace KevinRuscoe\AutoSortingModel\ServiceProvider;
+namespace KevinRuscoe\AutoSortingModel\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;

@@ -30,7 +30,7 @@
 	"extra": {
 	    "laravel": {
 	        "providers": [
-	            "KevinRuscoe\\AutoSortingModel\\ServiceProvider\\AutoSortingModelServiceProvider"
+	            "KevinRuscoe\\AutoSortingModel\\ServiceProviders\\AutoSortingModelServiceProvider"
 	        ]
 	    }
 	},

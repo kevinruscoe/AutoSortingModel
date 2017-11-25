@@ -1,6 +1,6 @@
 <?php
 
-namespace KevinRuscoe\AutoSortingModel\Trait;
+namespace KevinRuscoe\AutoSortingModel\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 
