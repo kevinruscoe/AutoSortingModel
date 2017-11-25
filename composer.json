@@ -24,7 +24,7 @@
 			"KevinRuscoe\\AutoSortingModel\\": "src"
 		},
 		"files": [
-            "Helpers/helpers.php"
+			"src/Helpers/helpers.php"
         ]
 	},
 	"extra": {
