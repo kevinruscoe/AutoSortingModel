@@ -16,15 +16,8 @@ trait AutoSortingModelTrait
     protected static function bootAutoSortingModelTrait()
     {
         static::addGlobalScope('auto-sorting-model', function (Builder $builder) {
-            $sortByKey = config(
-                'autosortingmodel.sortByKey', 
-                $builder->getModel()->sortByKey
-            );
-            
-            $sortOrderKey = config(
-                'autosortingmodel.sortOrderKey',
-                $builder->getModel()->sortOrderKey
-            );
+            $sortByKey = config('autosortingmodel.sortByKey', 'sortBy');
+            $sortOrderKey = config('autosortingmodel.sortOrderKey', 'sort');
 
             $sortBy = request($sortByKey ?? 'sortBy', 'id');
             $sort = request($sortOrderKey ?? 'sort', 'asc');
