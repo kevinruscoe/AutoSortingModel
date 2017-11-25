@@ -32,7 +32,7 @@
 	        "providers": [
 	            "KevinRuscoe\\AutoSortingModel\\ServiceProvider"
 	        ]
-	    },
+	    }
 	},
 	"license": "MIT"
 }
